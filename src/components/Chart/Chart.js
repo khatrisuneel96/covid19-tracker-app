@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import styles from './Chart.module.css'
 import { fetchDailyData } from '../Api'
 
 import { Line, Bar } from 'react-chartjs-2'
@@ -38,7 +39,7 @@ const Chart = () => {
     )
 
     return (
-        <div>
+        <div className={styles.container}>
             {lineChart}
         </div>
     )
